@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripción de la página web" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Preguntas frecuentes</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button>ICON</button>
+        <input type="text" placeholder="Buscar productos..." />
+        <a href=""><button>🔍</button></a>
+        <a href="./pages/favoritos.html"><button>❤️</button></a>
+        <a href=""><button>🛒</button></a>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./favoritos.html">Favoritos</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="faq-container">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">¿Realizan envíos a todo el país?</h3>
+          <p>
+            Sí, realizamos envíos a todo el país con diferentes opciones de
+            paquetería. El tiempo de entrega varía según la ubicación y el tipo
+            de envío seleccionado.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">¿Qué métodos de pago aceptan?</h3>
+          <p>
+            Aceptamos tarjetas de crédito y débito, transferencias bancarias y
+            pagos a través de plataformas digitales como [nombre de la
+            plataforma].
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            ¿Puedo cambiar o devolver un producto?
+          </h3>
+          <p>
+            Sí, aceptamos cambios y devoluciones dentro de los primeros [X] días
+            después de la compra, siempre y cuando el producto esté en perfectas
+            condiciones y con su empaque original. Consulta nuestra política de
+            devoluciones para más detalles.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">¿Los productos tienen garantía?</h3>
+          <p>
+            Sí, todos nuestros productos cuentan con garantía. El tiempo de
+            cobertura varía según el artículo. Si tienes algún problema,
+            contáctanos y te ayudaremos a resolverlo.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">¿Cómo puedo rastrear mi pedido?</h3>
+          <p>
+            Una vez que tu pedido sea despachado, recibirás un número de
+            seguimiento para rastrear tu paquete en tiempo real a través de la
+            página de la paquetería.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 onclick="toggleFAQ(this)">
+            ¿Cómo puedo contactar con atención al cliente?
+          </h3>
+          <p>
+            Puedes comunicarte con nosotros a través de nuestro correo
+            electrónico [email de contacto] o por WhatsApp al [número de
+            contacto]. Nuestro equipo estará encantado de ayudarte.
+          </p>
+        </div>
+
+        <p>
+          Si tienes más preguntas, no dudes en escribirnos. ¡Estamos aquí para
+          ayudarte!
+        </p>
+      </div>
+    </main>
+    <footer>
+      © 2025 <strong>Icon Store</strong>. Todos los derechos reservados.
+      Encuentra la mejor tecnología al mejor precio. ¡Compra con seguridad y
+      garantía! | Envíos a todo el país | Atención al cliente:
+      <a href="tel:[Teléfono]">[+56 9 1234 5678]</a> |
+      <a href="mailto:[Email de contacto]">[Icon@ejemplo.com]</a>
+    </footer>
+    <script>
+      function toggleFAQ(event) {
+        let content = event.nextElementSibling;
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
