@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descripción de la página web" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Icon Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <button>ICON</button>
-        <input type="text" placeholder="Buscar productos..." />
-        <a href=""><button>🔍</button></a>
-        <a href="./pages/favoritos.html"><button>❤️</button></a>
-        <a href=""><button>🛒</button></a>
+        <div>
+          <input type="text" placeholder="Buscar productos..." />
+          <a href="#"><button>🔍</button></a>
+        </div>
+        <div class="icon-buttons">
+          <a href="./pages/favoritos.html"><button>❤️</button></a>
+          <a href="#"><button>🛒</button></a>
+        </div>
       </nav>
       <nav>
         <ul>
@@ -29,32 +42,83 @@
     </header>
     <section class="hero">
       <div class="hero-text">
-          <h2>Encuentra en nuestra tienda los mejores accesorios para Celular y Computadora</h2>
+        <h2>
+          Encuentra en nuestra tienda los mejores accesorios para Celular y
+          Computadora
+        </h2>
       </div>
-      <div class="hero-offers">
-          <h3 class="offers-title">Ofertas Imperdibles</h3>
-          <div class="offer-carousel">
-              <button class="prev">&#60;</button>
-              <img src="placeholder.jpg" alt="Oferta del día">
-              <button class="next">&#62;</button>
+      <div class="hero-offers container my-4">
+        <h3 class="offers-title text-center mb-4">Ofertas Imperdibles</h3>
+
+        <div
+          id="offerCarousel"
+          class="carousel slide position-relative"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/cable c a ip 27W.jpg"
+                class="d-block w-100 rounded"
+                alt="Oferta del día"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/cargador c a c 20w.jpg"
+                class="d-block w-100 rounded"
+                alt="Otra oferta"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/cargador c a ip 20w.jpg"
+                class="d-block w-100 rounded"
+                alt="Otra más"
+              />
+            </div>
           </div>
+
+          <!-- Botones de navegación -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#offerCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#offerCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
       </div>
-  </section>
-  
-  <section class="featured-products">
+    </section>
+
+    <section class="featured-products">
       <div class="product-card">
-          <img src="placeholder.jpg" alt="Producto 1">
-          <p>Producto 1</p>
+        <img src="./assets/images/cable c a ip 27W.jpg" alt="Producto 1" />
+        <p>Producto 1</p>
       </div>
       <div class="product-card">
-          <img src="placeholder.jpg" alt="Producto 2">
-          <p>Producto 2</p>
+        <img
+          src="./assets/images/cargador samsung c a c.jpg"
+          alt="Producto 2"
+        />
+        <p>Producto 2</p>
       </div>
       <div class="product-card">
-          <img src="placeholder.jpg" alt="Producto 3">
-          <p>Producto 3</p>
+        <img src="./assets/images/audifonos jbl.jpg" alt="Producto 3" />
+        <p>Producto 3</p>
       </div>
-  </section>
+    </section>
     <footer>
       © 2025 <strong>Icon Store</strong>. Todos los derechos reservados.
       Encuentra la mejor tecnología al mejor precio. ¡Compra con seguridad y
