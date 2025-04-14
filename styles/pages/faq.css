@@ -1,0 +1,11 @@
+/* Estilos para FAQ */
+.faq-container {
+    padding: 20px;
+  }
+  .faq-item h3 {
+    cursor: pointer;
+    color: #1976d2;
+  }
+  .faq-item p {
+    display: none;
+  }

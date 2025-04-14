@@ -1,0 +1,14 @@
+:root {
+    --maincolor: #4a7ce9;
+    --secundarycolor: #83a7f5;
+    --saletxtcolor: #c95454;
+    --productbox: #5dbdb5;
+    --maintxtcolor: #0e0c0c;
+    --secondtxtcolor: #f0f0f0;
+  }
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
