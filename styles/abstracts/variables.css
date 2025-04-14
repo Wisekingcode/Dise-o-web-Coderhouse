@@ -1,30 +1,26 @@
 :root {
-    --color-primary: #4a7ce9;
-    --color-secondary: #83a7f5;
-    --color-accent: #c95454;
-    --color-product-box: #5dbdb5;
-    --color-bg: #f8f9fa;
-    --color-text-main: #0e0c0c;
-    --color-text-light: #f0f0f0;
-  
-    --font-base: 'Arial', sans-serif;
-  
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
-  }
-html, body {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Asegura que el main crezca y empuje el footer */
-  main {
-    flex: 1;
-  }
-  
+  --color-primary: #4a7ce9;
+  --color-secondary: #83a7f5;
+  --color-accent: #c95454;
+  --color-product-box: #5dbdb5;
+  --color-bg: #f8f9fa;
+  --color-text-main: #0e0c0c;
+  --color-text-light: #f0f0f0;
+
+  --font-base: "Arial", sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+html,body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}

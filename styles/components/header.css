@@ -35,6 +35,7 @@ header ul {
   gap: var(--spacing-sm);
   justify-content: center;
   margin-top: var(--spacing-sm);
+  
 }
 
 header ul li a {
@@ -45,4 +46,9 @@ header ul li a {
 
 header ul li a:hover {
   text-decoration: underline;
+  background-color: rgb(120, 185, 231);
+  padding: 0.3em;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  color: black;
 }
