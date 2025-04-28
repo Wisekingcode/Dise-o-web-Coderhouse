@@ -3,11 +3,13 @@
 .product-container,
 .favorites-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;  /* Para que los productos se acomoden en varias filas si es necesario */
+  justify-content: space-around; /* Espacio entre los productos */
+  gap: 20px;  /* Añadir más espacio entre los productos */
   padding: 20px;
-  flex-wrap: wrap;
 }
+
+/* Estilos para las tarjetas de productos */
 .product-card,
 .product-item,
 .favorite-item {
@@ -15,12 +17,48 @@
   padding: 15px;
   border-radius: 10px;
   text-align: center;
-  width: 200px;
+  width: 100%; /* Por defecto, el 100% del contenedor disponible */
+  max-width: 280px;  /* Limita el tamaño máximo para los productos */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;  /* Efecto hover */
 }
+
+/* Efecto hover */
+.product-card:hover,
+.product-item:hover,
+.favorite-item:hover {
+  transform: translateY(-5px);  /* Eleva un poco el producto cuando se pasa el cursor */
+}
+
+/* Imagen de los productos */
 .product-card img,
 .product-item img,
 .favorite-item img {
   width: 100%;
   border-radius: 5px;
+}
+
+/* Responsive: Ajuste de productos por fila en pantallas más grandes */
+@media (min-width: 768px) {
+  .favorites-container,
+  .product-container,
+  .featured-products {
+    justify-content: space-evenly; /* Centra los productos en pantallas grandes */
+  }
+
+  .product-card,
+  .product-item,
+  .favorite-item {
+    width: 30%;  /* 3 productos por fila en pantallas medianas y grandes */
+  }
+}
+
+/* Responsive: Adaptar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+  .product-card,
+  .product-item,
+  .favorite-item {
+    width: 100%;  /* En pantallas pequeñas, los productos ocuparán toda la fila */
+    max-width: none;
+  }
 }

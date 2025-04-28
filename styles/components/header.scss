@@ -6,6 +6,23 @@ header {
   padding-bottom: 4px;
 }
 
+/* Estilo base para el navbar-brand */
+.navbar-brand {
+  text-decoration: underline;
+   padding: 0.3em;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  color: black;
+}
+
+/* Efecto hover */
+.navbar-brand:hover {
+  background-color: var(--color-primary);
+  color: #f39c12; /* Cambiar color al hacer hover */
+  transform: scale(1.1); /* Agrandar ligeramente el texto */
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -47,7 +64,7 @@ header ul li a {
 
 header ul li a:hover {
   text-decoration: underline;
-  background-color: rgb(120, 185, 231);
+  background-color: var(--color-primary);
   padding: 0.3em;
   border-radius: 12px;
   transition: 0.3s ease;
