@@ -19,25 +19,51 @@
   </head>
   <body>
     <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Icon</a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav"
+            aria-controls="menuNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <nav>
-        <button>ICON</button>
-        <div>
+        <div class="search-bar">
           <input type="text" placeholder="Buscar productos..." />
           <a href="#"><button>🔍</button></a>
         </div>
-        <div class="icon-buttons">
-          <a href="./pages/favoritos.html"><button>❤️</button></a>
-          <a href="#"><button>🛒</button></a>
-        </div>
-      </nav>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/favoritos.html">Favoritos</a></li>
-          <li><a href="./pages/productos.html">Productos</a></li>
-          <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li><a href="./pages/faq.html">FAQ</a></li>
-        </ul>
       </nav>
     </header>
     <section class="hero">
