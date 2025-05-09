@@ -163,8 +163,12 @@ body {
   text-align: center;
 }
 
+.hero-text h1 {
+  font-size: 2rem;
+}
+
 .hero-text h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: var(--spacing-md);
 }
 
@@ -181,6 +185,8 @@ body {
 }
 
 .offer-carousel {
+  max-width: 600px; /* Ajustá el tamaño que quieras */
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
