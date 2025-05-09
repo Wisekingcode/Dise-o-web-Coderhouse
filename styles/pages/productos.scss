@@ -10,10 +10,10 @@
 }
 
 /* Estilos para las tarjetas de productos */
-.product-card,
+.col-md-4,
 .product-item,
-.favorite-item {
-  background-color: var(--color-product-box);
+.col-md-4 {
+  background-color: var(--color-product-box2);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -24,7 +24,7 @@
 }
 
 /* Efecto hover */
-.product-card:hover,
+.col-md-4:hover,
 .product-item:hover,
 .favorite-item:hover {
   transform: translateY(-5px);  /* Eleva un poco el producto cuando se pasa el cursor */
@@ -36,6 +36,15 @@
 .favorite-item img {
   width: 100%;
   border-radius: 5px;
+}
+.card-img-top {
+  object-fit: cover;
+ }
+.card-title {
+  font-size: 1rem;
+}
+.card-text {
+  font-size: 0.9rem;
 }
 
 /* Responsive: Ajuste de productos por fila en pantallas más grandes */

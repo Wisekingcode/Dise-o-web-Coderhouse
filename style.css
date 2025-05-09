@@ -5,6 +5,7 @@
   --color-sale: #362db9;
   --color-accent: #c95454;
   --color-product-box: #5dbdb5;
+  --color-product-box2: #3f719f;
   --color-bg: #f8f9fa;
   --color-text-main: #0e0c0c;
   --color-text-light: #f0f0f0;
@@ -274,7 +275,7 @@ body {
 
 /* Cada producto individual */
 .favorite-item {
-  background-color: #f9f9f9;
+  background-color: var(--color-product-box);
   padding: 20px;
   width: 250px;
   border-radius: 10px;
@@ -342,10 +343,10 @@ body {
 }
 
 /* Estilos para las tarjetas de productos */
-.product-card,
+.col-md-4,
 .product-item,
-.favorite-item {
-  background-color: var(--color-product-box);
+.col-md-4 {
+  background-color: var(--color-product-box2);
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -356,7 +357,7 @@ body {
 }
 
 /* Efecto hover */
-.product-card:hover,
+.col-md-4:hover,
 .product-item:hover,
 .favorite-item:hover {
   transform: translateY(-5px); /* Eleva un poco el producto cuando se pasa el cursor */
@@ -368,6 +369,18 @@ body {
 .favorite-item img {
   width: 100%;
   border-radius: 5px;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
 }
 
 /* Responsive: Ajuste de productos por fila en pantallas más grandes */
