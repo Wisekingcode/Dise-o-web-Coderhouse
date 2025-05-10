@@ -26,7 +26,7 @@
 }
 
 .offer-carousel { 
-  max-width: 600px; /* Ajustá el tamaño que quieras */
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -34,20 +34,73 @@
   gap: var(--spacing-sm);
 }
 
-.offer-carousel button {
-  background-color: var(--color-secondary);
-  border: none;
-  padding: var(--spacing-xs);
-  color: black;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  cursor: pointer;
+/* ====== CARRUSEL ====== */
+.carousel {
+  position: relative;
 }
-.carousel-wrapper {
-  background-color: #f56c3e; 
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(900%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 778px) and (max-width: 991px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(600%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+  }
+
+  .carousel-control-next {
+    right: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(500%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+  }
+
+  .carousel-control-next {
+    right: 5px;
+  }
 }
 
 /* ====== PRODUCTOS DESTACADOS ====== */
